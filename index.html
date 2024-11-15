@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <img src="" alt="" srcset="">
+    <script>
+      //******************************Main Block****************************
+      let main_div = document.createElement("div");
+      main_div.style.height = "550px";
+      main_div.style.width = "800px";
+      main_div.style.border = "2px solid black";
+      main_div.style.display = "flex";
+      main_div.style.justifyContent = "center";
+      main_div.style.gap = "5%";
+      main_div.style.alignItems = "center";
+      
+     
+      document.body.appendChild(main_div);
+
+      //*************************************Div1 block*********************
+
+      let div_1 = document.createElement("div");
+      div_1.style.height = "250px";
+      div_1.style.width = "180px";
+      div_1.style.border = "2px solid black";
+      let img_1 = document.createElement("img");
+      div_1.appendChild(img_1);
+      //  img_1.setAttribute("src","./images/OG.jpg")
+      img_1.style.height = "250px";
+      img_1.style.width = "180px";
+      let text1 = document.createElement("h1");
+      div_1.appendChild(text1);
+
+      main_div.appendChild(div_1);
+
+      //*********************************Div 2 block*******************************
+      let div_2 = document.createElement("div");
+      div_2.style.height = "250px";
+      div_2.style.width = "180px";
+      div_2.style.border = "2px solid black";
+      let img_2 = document.createElement("img");
+      div_2.appendChild(img_2);
+      // img_2.setAttribute("src","./images/OG2.jpg")
+      img_2.style.height = "250px";
+      img_2.style.width = "180px";
+      let text2 = document.createElement("h1");
+      div_2.appendChild(text2);
+
+      main_div.appendChild(div_2);
+
+      //***********************************Div 3 block***********************
+
+      let div_3 = document.createElement("div");
+      div_3.style.height = "250px";
+      div_3.style.width = "180px";
+      div_3.style.border = "2px solid black";
+      let img_3 = document.createElement("img");
+      div_3.appendChild(img_3);
+      // img_3.setAttribute("src","./images/OG4.jpg")
+      img_3.style.height = "250px";
+      img_3.style.width = "180px";
+      let text3 = document.createElement("h1");
+      div_3.appendChild(text3);
+
+      main_div.appendChild(div_3);
+
+      //****************subdiv***********************
+
+      let sub_div = document.createElement("div");
+      // sub_div.style.border="2px solid"
+      // sub_div.style.height="100px"
+      // sub_div.style.width="100px"
+      sub_div.style.display = "flex";
+      // sub_div.style.alignItems="center"
+      // sub_div.style.justifyContent="center"
+      sub_div.style.gap = "5%";
+      sub_div.style.marginTop = "20px";
+      sub_div.style.marginLeft = "250px";
+      document.body.appendChild(sub_div);
+
+      //************************************button1*****************************************
+
+      let button_1 = document.createElement("button");
+      button_1.innerHTML = "OG";
+      button_1.style.height = "20px";
+      button_1.style.padding = "15px";
+      button_1.style.borderRadius = "5px";
+      button_1.setAttribute("onclick", "OG()");
+      sub_div.appendChild(button_1);
+      //*********************************Button2*******************************
+      let button_2 = document.createElement("button");
+      button_2.innerHTML = "HHVM";
+      button_2.style.height = "20px";
+      button_2.style.padding = "15px";
+      button_2.style.borderRadius = "5px";
+      button_2.setAttribute("onclick", "HHVM()");
+
+      sub_div.appendChild(button_2);
+
+      //**************************button3***********************************
+
+      let button_3 = document.createElement("button");
+      button_3.innerHTML = "Ustaad";
+      button_3.style.height = "20px";
+      button_3.style.padding = "15px";
+      button_3.style.borderRadius = "5px";
+      button_3.setAttribute("onclick", "US()");
+      sub_div.appendChild(button_3);
+
+      function OG() {
+        img_1.setAttribute("src", "./images/OG.jpg");
+        img_2.setAttribute("src", "./images/OG2.jpg");
+        img_3.setAttribute("src", "./images/OG4.jpg");
+       main_div.style.backgroundImage="URL('./images/BackOG2.png')"
+           
+
+         
+        text1.innerHTML = "FIRESTROMISCOMING";
+        text1.style.display = "block";
+             text1.style.color="red"
+        text1.style.marginLeft="250px"
+        text3.style.display = "none";
+        text2.style.display = "none";
+      }
+
+      function HHVM() {
+        img_1.setAttribute("src", "./images/Hhvm.jpg");
+        img_2.setAttribute("src", "./images/HHVM1.jpg");
+        img_3.setAttribute("src", "./images/HHVM3.jpg");
+             main_div.style.backgroundImage="URL('./images/BackHHVMM.jpeg')"
+             main_div.style.backgroundRepeat="norepeat"
+        text2.innerHTML = "SPIRIT&SWORD";
+        text2.style.color = "gold";
+        text2.style.display = "block";
+        text1.style.display = "none";
+        text3.style.display = "none";
+      }
+      function US() {
+        img_1.setAttribute("src", "./images/US.jpg");
+        img_2.setAttribute("src", "./images/US2.jpeg");
+        img_3.setAttribute("src", "./images/US3.jpg");
+        text3.innerHTML = "BHAGAT'S BLAZE";
+        main_div.style.backgroundImage="URL('./images/Backus.jpg')"
+        text3.style.color = "silver";
+        text3.style.display = "block";
+        text3.style.marginLeft = "-250px";
+        text1.style.display = "none";
+        text2.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
